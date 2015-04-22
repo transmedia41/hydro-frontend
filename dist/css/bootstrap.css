@@ -25,9 +25,6 @@ body {
   margin-top: 10px;
   border-bottom: solid 2px black;
 }
-#nav-left {
-  position: fixed;
-}
 .row {
   margin-bottom: 50px;
 }
@@ -4711,6 +4708,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .nav-sidebar > .active > a:focus {
   color: #fff;
   background-color: #428bca;
+}
+#nav-left {
+  position: fixed;
 }
 .breadcrumb {
   padding: 8px 15px;
