@@ -17,11 +17,27 @@
 @brand-primary:         darken(#428bca, 6.5%); // #337ab7
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
-@brand-warning:         #f0ad4e;
+@brand-warning:         @hydro-warning;
 @brand-danger:          #d9534f;
 
+//## Hydromerta corporate
+
+
+@hydro-warning:			#9e1915;
+
+@hydro-orange:			#ea590c;
+
+@hydro-black:			2b1a11;
+@hydro-blue:			#14333d;
+@hydro-blue-middle:		#3e758e;
+@hydro-blue-light:		#49a9cf;
+
+
+@hydro-black-nav:		#333033;
+@hydro-red:				#9e1915;
 
 @hydro-braun:			#817874;
+@hydro-braun-light:		lighten(@gray-base, 80%);
 
 
 
@@ -46,11 +62,14 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "hoverageregular", Helvetica, Arial, sans-serif;
+@font-family-corps:  	  "fairviewregular", Helvetica, Arial, sans-serif;
+
+
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
+@font-family-base:        @font-family-corps;
 
 @font-size-base:          14px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
@@ -148,9 +167,10 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #333;
-@btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-color:              #fff;
+@btn-default-bg:                 @hydro-blue;
+@btn-default-border:             @hydro-blue;
+
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
