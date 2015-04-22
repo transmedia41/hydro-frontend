@@ -10,3 +10,31 @@ $('footer').hide();
 $('.pull-down').each(function() {
     $(this).css('margin-top', $(this).parent().height()-$(this).height())
 });
+
+
+//Initialisation circle
+   $('#circle').circleProgress({
+        value: 0.75,
+        size: 80,
+        thickness: 9,
+        fill: {
+            gradient: ["#333"]
+        }
+    });
+
+   /*
+ * Example 2:
+ *   - default gradient
+ *   - listening to `circle-animation-progress` event and display the animation progress: from 0 to 100%
+ */
+$('.circle_1').circleProgress({
+    value: 0.6, 
+    size: 80,
+    value: 0.75,
+    thickness: 8,
+    fill: {
+            gradient: ["#9e1915"]
+        }
+}).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html(parseInt(100 * progress) + '<i>%</i>');
+});

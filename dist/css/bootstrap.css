@@ -37,6 +37,22 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.dash_influence {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.dash_secteurs {
+  width: 50%;
+  float: left;
+}
+.dash_secteurs .secteur {
+  font-size: 2.6em;
+  font-family: "hoverageregular", Helvetica, Arial, sans-serif;
+}
+.dash_secteurs i {
+  color: #49a9cf;
+}
 /*
 * Icones Actionlist
 */
