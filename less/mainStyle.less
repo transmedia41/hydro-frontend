@@ -7,17 +7,17 @@
  /* Move down content because we have a fixed navbar that is 50px tall */
  body {
 
-	margin: 0;
-	padding: 0;
-  background-image: url('../img/halftoneDark.png');
-}
+   margin: 0;
+   padding: 0;
+   background-image: url('../img/halftoneDark.png');
+ }
 
-.piece {
-background-image: url('../img/halftone.png');
+ .piece {
+  background-image: url('../img/halftone.png');
 }
 
 .imgGD {
-background-image: url('../img/halftone.png'); 
+  background-image: url('../img/halftone.png'); 
 }
 
 
@@ -74,6 +74,56 @@ background-image: url('../img/halftone.png');
 }
 
 
+.dash_influence{
+  width: 50%;
+  float: left;
+  text-align: center;
+
+  .circle_1{
+    height: 80px;
+  }
+
+  .influence {
+    h1{
+      font-size: 1.5em;
+      margin-top: 5px;
+      font-family: @font-family-sans-serif;
+    }
+
+    
+  }
+}
+.dash_secteurs{
+  width: 50%;
+  float: left;
+  .secteur {
+    font-size: 2em;
+    font-family: @font-family-sans-serif;
+  }
+
+  .secteur_qte{
+    height: 80px;
+    text-align: center;
+    padding-right: 120px;
+    padding-top: 25px;
+    i {
+      color: @hydro-blue-light;
+    }
+  }
+  .secteur_titre{
+    h1{
+      font-size: 0.8em;
+      margin-top: 5px;
+      font-family: @font-family-sans-serif;
+    }
+
+  }
+}
+
+
+
+
+
 
 
 
@@ -92,26 +142,6 @@ background-image: url('../img/halftone.png');
 
 
 
-.dash_influence{
-  width: 50%;
-  float: left;
-  text-align: center;
-
-}
-
-.dash_secteurs{
-  width: 50%;
-  float: left;
-    .secteur {
-      font-size: 2.6em;
-      font-family: @font-family-sans-serif;
-    }
-    i {
-      color: @hydro-blue-light;
-    }
-
-}
-
 
 
 /*
@@ -128,8 +158,8 @@ background-image: url('../img/halftone.png');
   }
 }
 .active{
-    color: @hydro-blue;
-  }
+  color: @hydro-blue;
+}
 
 
 /*

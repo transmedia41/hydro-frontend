@@ -55,28 +55,47 @@ body {
   color: #2b1a11;
   margin-right: 40%;
 }
-.contentDashboardRow {
-  margin-bottom: 15px;
-  margin-top: 15px;
-  border-bottom: solid 2px #cccccc;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
 .dash_influence {
   width: 50%;
   float: left;
   text-align: center;
+}
+.dash_influence .circle_1 {
+  height: 80px;
+}
+.dash_influence .influence h1 {
+  font-size: 1.5em;
+  margin-top: 5px;
+  font-family: "hoverageregular", Helvetica, Arial, sans-serif;
 }
 .dash_secteurs {
   width: 50%;
   float: left;
 }
 .dash_secteurs .secteur {
-  font-size: 2.6em;
+  font-size: 2em;
   font-family: "hoverageregular", Helvetica, Arial, sans-serif;
 }
-.dash_secteurs i {
+.dash_secteurs .secteur_qte {
+  height: 80px;
+  text-align: center;
+  padding-right: 120px;
+  padding-top: 25px;
+}
+.dash_secteurs .secteur_qte i {
   color: #49a9cf;
+}
+.dash_secteurs .secteur_titre h1 {
+  font-size: 0.8em;
+  margin-top: 5px;
+  font-family: "hoverageregular", Helvetica, Arial, sans-serif;
+}
+.contentDashboardRow {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-bottom: solid 2px #cccccc;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 /*
 * Icones Actionlist
@@ -358,6 +377,39 @@ body {
   height: 1080px;
   z-index: -1;
   left: -5px;
+}
+.login {
+  background-color: white;
+  margin-top: 150px;
+}
+.login button {
+  border-radius: 0;
+  width: 100%;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.login .loginMenu {
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 0px 0 0px 0;
+}
+.login .loginMenu:hover {
+  color: blue;
+  cursor: pointer;
+}
+.login .login_header {
+  text-align: center;
+  top: -35px;
+}
+.login .input-group {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 0px !important;
+}
+.login .input-group-addon {
+  width: 1% !important;
+  border-radius: 0px !important;
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -2899,7 +2951,7 @@ output {
   background-color: #ffffff;
   background-image: none;
   border: 1px solid #cccccc;
-  border-radius: 4px;
+  border-radius: 0px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
