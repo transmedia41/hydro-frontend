@@ -338,6 +338,15 @@ body {
   display: block;
   color: #444;
 }
+.map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1080px;
+  z-index: -1;
+  left: 0px;
+}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
