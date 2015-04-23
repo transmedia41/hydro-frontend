@@ -3,7 +3,6 @@
  */
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  height: 100vh;
   margin: 0;
   padding: 0;
   background-image: url('../img/halftoneDark.png');
@@ -338,93 +337,6 @@ body {
 .timeline li:hover .details {
   display: block;
   color: #444;
-}
-.organigramme {
-  width: 40%;
-  /* Basic styling */
-  /* Draw the lines */
-  /* node cell */
-  /* The node */
-  /* jQuery drag 'n drop */
-  /* Header */
-  /* list stuff */
-  /* bootstrap overrides */
-  /* Custom chart styling */
-  /* Custom node styling */
-}
-.organigramme .jOrgChart .line {
-  height: 20px;
-  width: 4px;
-}
-.organigramme .jOrgChart .down {
-  background-color: black;
-  margin: 0px auto;
-}
-.organigramme .jOrgChart .top {
-  border-top: 3px solid black;
-}
-.organigramme .jOrgChart .left {
-  border-right: 2px solid black;
-}
-.organigramme .jOrgChart .right {
-  border-left: 2px solid black;
-}
-.organigramme .jOrgChart td {
-  text-align: center;
-  vertical-align: top;
-  padding: 0;
-}
-.organigramme .jOrgChart .node {
-  background-color: #35363B;
-  display: inline-block;
-  width: 96px;
-  height: 60px;
-  z-index: 10;
-  margin: 0 2px;
-}
-.organigramme .drag-active {
-  border-style: dotted !important;
-}
-.organigramme .drop-hover {
-  border-style: solid !important;
-  border-color: #E05E00 !important;
-}
-.organigramme .brand {
-  color: #E05E00 !important;
-  font-family: georgia;
-  font-style: italic;
-}
-.organigramme #org {
-  background-color: white;
-  margin: 10px;
-  padding: 10px;
-}
-.organigramme #show-list {
-  cursor: pointer;
-}
-.organigramme .alert-message {
-  margin: 2px 0;
-}
-.organigramme .topbar {
-  position: absolute;
-}
-.organigramme .jOrgChart {
-  margin: 10px;
-  padding: 20px;
-}
-.organigramme .jOrgChart .node {
-  font-size: 14px;
-  background-color: #35363B;
-  border-radius: 8px;
-  border: 5px solid white;
-  color: #F38630;
-  -moz-border-radius: 8px;
-}
-.organigramme .node p {
-  font-family: tahoma;
-  font-size: 10px;
-  line-height: 11px;
-  padding: 2px;
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {

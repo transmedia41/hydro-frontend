@@ -9,6 +9,10 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.css" rel="stylesheet">
+   <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.css' rel='stylesheet' />
+   <style>
+    .map { position:absolute; top:0; bottom:0; width:100%; }
+  </style>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,9 +76,14 @@
             </ul>
           </div>
           <!-- Configuration largeur contenu -->
-          <div class="col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1 main">
-          </div>
+          <div class="col-md-11 col-md-offset-1 main">
+        
 
+         <div id='map-one' class='map'> </div>
+
+          </div>
+  </div>
+      </div>
 
           <!-- Fin contenu -->
 
@@ -146,8 +155,7 @@
 
 
 
-        </div>
-      </div>
+      
     </div>
 
 
@@ -162,6 +170,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
       <script src="js/circle-progress.js"></script>
+      <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.js'></script>
     <script src="js/frontend.js"></script>
   </body>
   </html>
