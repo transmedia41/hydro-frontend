@@ -12,7 +12,7 @@
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @navbar-margin-bottom;
-  border: 1px solid transparent;
+  border: 3px solid @hydro-blue;
 
   // Prevent floats from breaking the navbar
   &:extend(.clearfix all);
@@ -527,8 +527,10 @@
 // Inverse navbar
 
 .navbar-inverse {
+/*
   background-color: @navbar-inverse-bg;
   border-color: @navbar-inverse-border;
+*/
 
   .navbar-brand {
     color: @navbar-inverse-brand-color;
@@ -658,6 +660,83 @@
     }
   }
 }
+
+
+
+/*
+* Header
+*/
+
+#header{
+	color:@hydro-white-text ;
+	z-index: 10;
+	position: relative;
+	background: @hydro-blue-dark;
+	border-bottom: solid 3px @hydro-black;
+	margin: 0;
+	padding: 0;
+	.navbar-brand{
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		color: transparent;
+		.at2x('../img/logo_header.png');
+		background-size: 60px, 60px;
+		height: 60px;
+		width: 60px;
+		bottom:-30px;
+		left: 1.7vw;
+	}
+	#navbar{
+		.xp_wrapper{
+			.xp{
+				float: left;
+				font-size: 5vh;
+			}
+			.loader_wrap{
+				float: left;
+				margin: 1.2vh 1vw 0 1vw;
+				height: 4vh;
+				width:50%;
+				border: solid 1px @hydro-white-text;
+				.fill{
+					display: inline-block;
+					background: @hydro-white-text;
+					height: 100%;
+					width: 33%;
+					p{
+						color: @hydro-blue-dark;
+						height: 100%;
+						font-size: 2.8vh;
+						vertical-align: middle;
+					}
+				}
+			}
+			.grade{
+				
+				font-size: 2.8vh;
+			}
+			p{
+				float: left;
+				display: inline;
+			}
+		}
+		.navbar-right{
+			li{
+				color: @hydro-white-text;
+			}
+		}
+	}
+}
+
+#nav-left{
+	z-index: 5;
+	background: @hydro-black-nav;
+}
+
+
+
+
 
 /*
 * Navigation Left

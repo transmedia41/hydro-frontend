@@ -3,7 +3,9 @@
  */
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 .pannelClose {
   margin-bottom: -25px;
@@ -4242,7 +4244,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
+  border: 3px solid #14333d;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4661,8 +4663,10 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #cccccc;
 }
 .navbar-inverse {
-  background-color: #222222;
-  border-color: #080808;
+  /*
+  background-color: @navbar-inverse-bg;
+  border-color: @navbar-inverse-border;
+*/
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -4761,6 +4765,73 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444444;
+}
+/*
+* Header
+*/
+#header {
+  color: #eeece1;
+  z-index: 10;
+  position: relative;
+  background: #06323c;
+  border-bottom: solid 3px #2b1a11;
+  margin: 0;
+  padding: 0;
+}
+#header .navbar-brand {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  color: transparent;
+  background-image: url('../img/logo_header.png');
+  background-size: 60px, 60px;
+  height: 60px;
+  width: 60px;
+  bottom: -30px;
+  left: 1.7vw;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  #header .navbar-brand {
+    background-image: url('../img/logo_header@2x.png');
+    background-size: auto auto;
+  }
+}
+#header #navbar .xp_wrapper .xp {
+  float: left;
+  font-size: 5vh;
+}
+#header #navbar .xp_wrapper .loader_wrap {
+  float: left;
+  margin: 1.2vh 1vw 0 1vw;
+  height: 4vh;
+  width: 50%;
+  border: solid 1px #eeece1;
+}
+#header #navbar .xp_wrapper .loader_wrap .fill {
+  display: inline-block;
+  background: #eeece1;
+  height: 100%;
+  width: 33%;
+}
+#header #navbar .xp_wrapper .loader_wrap .fill p {
+  color: #06323c;
+  height: 100%;
+  font-size: 2.8vh;
+  vertical-align: middle;
+}
+#header #navbar .xp_wrapper .grade {
+  font-size: 2.8vh;
+}
+#header #navbar .xp_wrapper p {
+  float: left;
+  display: inline;
+}
+#header #navbar .navbar-right li {
+  color: #eeece1;
+}
+#nav-left {
+  z-index: 5;
+  background: #333033;
 }
 /*
 * Navigation Left
