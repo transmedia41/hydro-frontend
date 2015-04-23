@@ -4947,6 +4947,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 * Header
 */
 #header {
+  position: fixed;
   color: #eeece1;
   z-index: 10;
   position: relative;
@@ -4962,11 +4963,13 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: transparent;
   text-align: center;
   background-image: url('../img/logo_header.png');
-  background-size: 80px, 80px;
-  height: 80px;
-  width: 80px;
-  bottom: -40px;
-  left: 1vw;
+  background-size: 100%;
+  height: 4vw;
+  width: 3.999vw;
+  min-height: 40px;
+  min-width: 40px;
+  bottom: -2vw;
+  left: 2vw;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   #header .navbar-brand {
@@ -4979,12 +4982,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 #header #navbar .xp_wrapper .xp {
   float: left;
-  font-size: 20px;
-  margin: 2.1% 0 0;
+  font-size: 25px;
+  margin: 13px 0 0;
 }
 #header #navbar .xp_wrapper .loader_wrap {
   float: right;
-  margin: 3% 0 0;
+  margin: 17px 0 0;
   height: 20px;
   width: 93%;
   border: solid 1px #eeece1;
