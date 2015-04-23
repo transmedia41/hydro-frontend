@@ -357,7 +357,7 @@ body {
   width: 100%;
   height: 1080px;
   z-index: -1;
-  left: 0px;
+  left: -5px;
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
