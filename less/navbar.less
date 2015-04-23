@@ -137,6 +137,7 @@
 // Fix the top/bottom navbars when screen real estate supports it
 .navbar-fixed-top,
 .navbar-fixed-bottom {
+	border:none;
   position: fixed;
   right: 0;
   left: 0;
@@ -680,12 +681,13 @@
 		padding: 0;
 		position: absolute;
 		color: transparent;
+		text-align: center;
 		.at2x('../img/logo_header.png');
 		background-size: 80px, 80px;
 		height: 80px;
 		width: 80px;
 		bottom:-40px;
-		left: 1vw;
+		left:1vw;
 	}
 	#navbar{
 		.xp_wrapper{
@@ -705,7 +707,7 @@
 					display: inline-block;
 					background: @hydro-white-text;
 					height: 100%;
-					width: 33%;
+					width: 0%;
 					p{
 						color: @hydro-blue-dark;
 						height: 100%;
@@ -719,7 +721,9 @@
 				}
 			}
 			.grade{
-				margin: 3px 0 0 3%;
+				margin: 3px 0 0;
+				width: 93%;
+				float: right;
 				font-size: 15px;
 				margin-bottom: 0;
 			}
@@ -739,48 +743,67 @@
 	}
 }
 
-#nav-left{
-	z-index: 5;
-	background: @hydro-black-nav;
-	.nav{
-		margin-top: 50px;
-	}
-}
-
-
-
 
 
 /*
 * Navigation Left
 */
 
-.nav > li {
-  text-align: center;
-}
-
-/* Sidebar navigation */
-.nav-sidebar {
-  margin-right: -21px; /* 20px padding + 1px border */
-  margin-bottom: 20px;
-  margin-left: -20px;
-}
-.nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-  color: #fff;
-  background-color: #428bca;
-}
-
 
 #nav-left{
-  position: fixed;
-
+	position: fixed;
+	z-index: 5;
+	padding: 0;
+	border: none;
+	background: url('../img/side_nav.png')  top right repeat-y;
+	.nav{
+		margin-top: 10vh;
+		li{
+			text-align: center;
+			padding:0 20px;
+			margin: 0;
+			a{
+				span{
+					font-size: 55px;
+					&:before{
+						color: @hydro-braun;
+					}
+				}
+				p{
+					font-family: @font-family-sans-serif;
+					color: @hydro-braun;
+				}
+				&:not(.active){
+					border-bottom: solid 2px @hydro-braun;
+				}
+			}
+			&.active, &:hover{
+				a{
+					border-bottom: none;
+					margin-bottom: 2px;
+					span{
+						font-size: 55px;
+						&:before{
+							color: @hydro-black-nav;
+						}
+					}
+					p{
+						color: @hydro-black-nav;
+					}
+// 					background: @hydro-white-text;
+						background: none;
+				}
+				background: url('../img/side_nav_hover.png') top right no-repeat;
+			}
+			&:last-child{
+				a{
+					border-bottom: none;
+				}
+			}
+		}
+	}
 }
+
 
 
 

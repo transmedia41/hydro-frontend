@@ -3,7 +3,6 @@
  */
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  height: 100vh;
   margin: 0;
   padding: 0;
   background-image: url('../img/halftoneDark.png');
@@ -226,7 +225,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .icon-iconeRound:before {
+  content: "\ea92";
+}
+.icon-sidenav-action:before {
   content: "\e600";
+}
+.icon-sidenav-docs:before {
+  content: "\e601";
+}
+.icon-sidenav-mafia:before {
+  content: "\e602";
+}
+.icon-sidenav-tactic:before {
+  content: "\e603";
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -4111,7 +4122,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
 }
 .nav > li.disabled > a {
   color: #777777;
@@ -4372,6 +4382,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
+  border: none;
   position: fixed;
   right: 0;
   left: 0;
@@ -4829,6 +4840,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 0;
   position: absolute;
   color: transparent;
+  text-align: center;
   background-image: url('../img/logo_header.png');
   background-size: 80px, 80px;
   height: 80px;
@@ -4861,7 +4873,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   display: inline-block;
   background: #eeece1;
   height: 100%;
-  width: 33%;
+  width: 0%;
 }
 #header #navbar .xp_wrapper .loader_wrap .fill p {
   color: #06323c;
@@ -4874,7 +4886,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-size: 10px;
 }
 #header #navbar .xp_wrapper .grade {
-  margin: 3px 0 0 3%;
+  margin: 3px 0 0;
+  width: 93%;
+  float: right;
   font-size: 15px;
   margin-bottom: 0;
 }
@@ -4888,38 +4902,61 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #eeece1;
   margin-top: 10px;
 }
-#nav-left {
-  z-index: 5;
-  background: #333033;
-}
-#nav-left .nav {
-  margin-top: 50px;
-}
 /*
 * Navigation Left
 */
-.nav > li {
-  text-align: center;
-}
-/* Sidebar navigation */
-.nav-sidebar {
-  margin-right: -21px;
-  /* 20px padding + 1px border */
-  margin-bottom: 20px;
-  margin-left: -20px;
-}
-.nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-  color: #fff;
-  background-color: #428bca;
-}
 #nav-left {
   position: fixed;
+  z-index: 5;
+  padding: 0;
+  border: none;
+  background: url('../img/side_nav.png') top right repeat-y;
+}
+#nav-left .nav {
+  margin-top: 10vh;
+}
+#nav-left .nav li {
+  text-align: center;
+  padding: 0 20px;
+  margin: 0;
+}
+#nav-left .nav li a span {
+  font-size: 55px;
+}
+#nav-left .nav li a span:before {
+  color: #817874;
+}
+#nav-left .nav li a p {
+  font-family: "hoverageregular", Helvetica, Arial, sans-serif;
+  color: #817874;
+}
+#nav-left .nav li a:not(.active) {
+  border-bottom: solid 2px #817874;
+}
+#nav-left .nav li.active,
+#nav-left .nav li:hover {
+  background: url('../img/side_nav_hover.png') top right no-repeat;
+}
+#nav-left .nav li.active a,
+#nav-left .nav li:hover a {
+  border-bottom: none;
+  margin-bottom: 2px;
+  background: none;
+}
+#nav-left .nav li.active a span,
+#nav-left .nav li:hover a span {
+  font-size: 55px;
+}
+#nav-left .nav li.active a span:before,
+#nav-left .nav li:hover a span:before {
+  color: #333033;
+}
+#nav-left .nav li.active a p,
+#nav-left .nav li:hover a p {
+  color: #333033;
+}
+#nav-left .nav li:last-child a {
+  border-bottom: none;
 }
 .breadcrumb {
   padding: 8px 15px;

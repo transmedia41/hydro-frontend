@@ -41,6 +41,16 @@ $('.circle_1').circleProgress({
 
 
 
+//-- XP Loader
+var xp = $('.fill').attr('data-xp');
+$('.fill').animate({
+    width: xp+"%"
+  }, 1000);
+  
+  
+
+
+
 //---Galerie Image
 $(function(){$('.imgGD').hide();})
 
