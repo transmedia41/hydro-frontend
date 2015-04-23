@@ -681,23 +681,25 @@
 		position: absolute;
 		color: transparent;
 		.at2x('../img/logo_header.png');
-		background-size: 60px, 60px;
-		height: 60px;
-		width: 60px;
-		bottom:-30px;
-		left: 1.7vw;
+		background-size: 80px, 80px;
+		height: 80px;
+		width: 80px;
+		bottom:-40px;
+		left: 1vw;
 	}
 	#navbar{
 		.xp_wrapper{
+			float: left;
 			.xp{
 				float: left;
-				font-size: 5vh;
+				font-size: 20px;
+				margin:2.1% 0 0;
 			}
 			.loader_wrap{
-				float: left;
-				margin: 1.2vh 1vw 0 1vw;
-				height: 4vh;
-				width:50%;
+				float: right;
+				margin: 3% 0 0;
+				height: 20px;
+				width:93%;
 				border: solid 1px @hydro-white-text;
 				.fill{
 					display: inline-block;
@@ -707,16 +709,23 @@
 					p{
 						color: @hydro-blue-dark;
 						height: 100%;
-						font-size: 2.8vh;
+						font-size: 15px;
 						vertical-align: middle;
+						margin-left: 5%;
+						span{
+							font-size:10px;
+						}
 					}
 				}
 			}
 			.grade{
-				
-				font-size: 2.8vh;
+				margin: 3px 0 0 3%;
+				font-size: 15px;
+				margin-bottom: 0;
 			}
 			p{
+				font-family: @font-family-sans-serif;
+				text-transform: lowercase;
 				float: left;
 				display: inline;
 			}
@@ -724,6 +733,7 @@
 		.navbar-right{
 			li{
 				color: @hydro-white-text;
+				margin-top: 10px;
 			}
 		}
 	}
@@ -732,6 +742,9 @@
 #nav-left{
 	z-index: 5;
 	background: @hydro-black-nav;
+	.nav{
+		margin-top: 50px;
+	}
 }
 
 
