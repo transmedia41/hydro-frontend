@@ -38,3 +38,19 @@ $('.circle_1').circleProgress({
 }).on('circle-animation-progress', function(event, progress) {
     $(this).find('strong').html(parseInt(100 * progress) + '<i>%</i>');
 });
+
+
+
+//---Galerie Image
+$(function(){$('.imgGD').hide();})
+
+
+$('.imgThumb').click(function() {
+$(".imgGD").toggle();
+});
+
+
+
+
+
+
