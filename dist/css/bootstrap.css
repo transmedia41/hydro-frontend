@@ -59,34 +59,52 @@ body {
   width: 50%;
   float: left;
   text-align: center;
+  font-size: 1.5em;
 }
 .dash_influence .circle_1 {
   height: 80px;
+  position: relative;
+}
+.dash_influence .circle_1 strong {
+  font-size: 1.5em;
+  text-align: center;
+}
+.dash_influence .circle_1 strong i {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 22%;
 }
 .dash_influence .influence h1 {
-  font-size: 1.5em;
   margin-top: 5px;
   font-family: "hoverageregular", Helvetica, Arial, sans-serif;
 }
 .dash_secteurs {
   width: 50%;
   float: left;
+  text-align: center;
+  font-size: 1.5em;
 }
 .dash_secteurs .secteur {
-  font-size: 2em;
   font-family: "hoverageregular", Helvetica, Arial, sans-serif;
 }
 .dash_secteurs .secteur_qte {
   height: 80px;
-  text-align: center;
-  padding-right: 120px;
-  padding-top: 25px;
+  position: relative;
 }
-.dash_secteurs .secteur_qte i {
+.dash_secteurs .secteur_qte p {
+  position: absolute;
+  font-size: 1.8em;
+  width: 100%;
+  top: 22%;
+  margin: 0;
+  left: 0;
+}
+.dash_secteurs .secteur_qte p i {
   color: #49a9cf;
 }
 .dash_secteurs .secteur_titre h1 {
-  font-size: 0.8em;
   margin-top: 5px;
   font-family: "hoverageregular", Helvetica, Arial, sans-serif;
 }
