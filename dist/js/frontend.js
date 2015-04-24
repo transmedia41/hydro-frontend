@@ -13,8 +13,9 @@ $('.pull-down').each(function() {
 
 
 //Initialisation circle
+var influence = $('.circle_1').attr('data-influence');
    $('#circle').circleProgress({
-        value: 0.75,
+        value: influence,
         size: 80,
         thickness: 9,
         fill: {
@@ -28,16 +29,17 @@ $('.pull-down').each(function() {
  *   - listening to `circle-animation-progress` event and display the animation progress: from 0 to 100%
  */
 $('.circle_1').circleProgress({
-    value: 0.6, 
-    progress: 50,
+
     size: 80,
-    value: 0.75,
+    value: influence,
+    startAngle: Math.PI /2,
     thickness: 8,
     fill: {
-            gradient: ["#9e1915"]
+            gradient: ['#9e1915']
         }
-}).on('circle-animation-progress', function(event, progress) {
-    $(this).find('strong').html(parseInt(100 * progress) + '<i>%</i>');
+}).on('circle-animation-progress', function(event,progress, influence) {
+	$(this).find('strong').html('<i>'+parseInt((influence*100))+'%</i>');
+/*     $(this).find('strong').html(parseInt(100 * influence) + '<i>%</i>'); */
 });
 
 
