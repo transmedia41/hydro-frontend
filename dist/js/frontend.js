@@ -29,6 +29,7 @@ var influence = $('.circle_1').attr('data-influence');
  *   - listening to `circle-animation-progress` event and display the animation progress: from 0 to 100%
  */
 $('.circle_1').circleProgress({
+
     size: 80,
     value: influence,
     startAngle: Math.PI /2,

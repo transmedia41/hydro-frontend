@@ -1,6 +1,9 @@
 /*
  * Base structure
  */
+.input {
+  outline: none !important;
+}
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   margin: 0;
@@ -387,6 +390,17 @@ body {
   display: block;
   color: #444;
 }
+.description {
+  background-image: url('../img/halftone.png');
+  background-color: white;
+  margin-bottom: 10px;
+}
+.organigrammeDescription .description {
+  background-image: url('../img/halftone.png');
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
 .map {
   position: absolute;
   top: 0;
@@ -397,28 +411,38 @@ body {
   left: -5px;
 }
 .login {
+  background-image: url('../img/halftone.png');
   background-color: white;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 .login button {
   border-radius: 0;
   width: 100%;
   margin-bottom: 15px;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.login .help-block {
+  color: #ea590c;
+}
+.login .selected {
+  color: #817874;
+  text-decoration: underline;
 }
 .login .loginMenu {
   text-align: center;
   font-size: 1.5em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 0px 0 0px 0;
 }
 .login .loginMenu:hover {
-  color: blue;
+  color: #817874;
   cursor: pointer;
 }
 .login .login_header {
   text-align: center;
-  top: -35px;
+  top: -42px;
 }
 .login .input-group {
   width: 100%;
@@ -428,6 +452,29 @@ body {
 .login .input-group-addon {
   width: 1% !important;
   border-radius: 0px !important;
+}
+.descriptionLandingPage {
+  margin-top: 50px;
+}
+.descriptionLandingPage h1 {
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: "hoverageregular", Helvetica, Arial, sans-serif;
+}
+.descriptionLandingPage .description {
+  background-image: url('../img/halftone.png');
+  background-color: white;
+  margin-bottom: 10px;
+}
+.mainLogo {
+  text-align: center;
+  margin-top: 40px;
+}
+.mainLogo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
