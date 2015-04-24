@@ -156,10 +156,10 @@ module.exports = function (grunt) {
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>.css.map',
-          sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
+          sourceMapFilename: '../app/styles/theme/<%= pkg.name %>.css.map'
         },
         src: 'less/bootstrap.less',
-        dest: 'dist/css/<%= pkg.name %>.css'
+        dest: '../app/styles/theme/<%= pkg.name %>.css'
       },
       compileTheme: {
         options: {
@@ -167,10 +167,10 @@ module.exports = function (grunt) {
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>-theme.css.map',
-          sourceMapFilename: 'dist/css/<%= pkg.name %>-theme.css.map'
+          sourceMapFilename: '../app/styles/theme/<%= pkg.name %>-theme.css.map'
         },
         src: 'less/theme.less',
-        dest: 'dist/css/<%= pkg.name %>-theme.css'
+        dest: '../app/styles/theme/<%= pkg.name %>-theme.css'
       }
     },
 
@@ -182,13 +182,13 @@ module.exports = function (grunt) {
         options: {
           map: true
         },
-        src: 'dist/css/<%= pkg.name %>.css'
+        src: '../app/styles/theme/<%= pkg.name %>.css'
       },
       theme: {
         options: {
           map: true
         },
-        src: 'dist/css/<%= pkg.name %>-theme.css'
+        src: '../app/styles/theme/<%= pkg.name %>-theme.css'
       },
       docs: {
         src: ['docs/assets/css/anchor.css', 'docs/assets/css/src/docs.css']
@@ -206,8 +206,8 @@ module.exports = function (grunt) {
         csslintrc: 'less/.csslintrc'
       },
       dist: [
-        'dist/css/bootstrap.css',
-        'dist/css/bootstrap-theme.css'
+        '../app/styles/theme/bootstrap.css',
+        '../app/styles/theme/bootstrap-theme.css'
       ],
       examples: [
         'docs/examples/**/*.css'
@@ -230,12 +230,12 @@ module.exports = function (grunt) {
         advanced: false
       },
       minifyCore: {
-        src: 'dist/css/<%= pkg.name %>.css',
-        dest: 'dist/css/<%= pkg.name %>.min.css'
+        src: '../app/styles/theme/<%= pkg.name %>.css',
+        dest: '../app/styles/theme/<%= pkg.name %>.min.css'
       },
       minifyTheme: {
-        src: 'dist/css/<%= pkg.name %>-theme.css',
-        dest: 'dist/css/<%= pkg.name %>-theme.min.css'
+        src: '../app/styles/theme/<%= pkg.name %>-theme.css',
+        dest: '../app/styles/theme/<%= pkg.name %>-theme.min.css'
       },
       docs: {
         src: [
@@ -254,7 +254,7 @@ module.exports = function (grunt) {
         banner: '<%= banner %>'
       },
       files: {
-        src: 'dist/css/*.css'
+        src: '../app/styles/theme/*.css'
       }
     },
 
@@ -264,9 +264,9 @@ module.exports = function (grunt) {
       },
       dist: {
         expand: true,
-        cwd: 'dist/css/',
+        cwd: '../app/styles/theme/',
         src: ['*.css', '!*.min.css'],
-        dest: 'dist/css/'
+        dest: '../app/styles/theme/'
       },
       examples: {
         expand: true,
