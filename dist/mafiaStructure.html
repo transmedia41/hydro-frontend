@@ -10,6 +10,7 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap.css" rel="stylesheet">
 
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,7 +18,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
     </head>
-    <body>
+    <body onload="draw()">
 
       <nav id="header" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
@@ -73,6 +74,10 @@
      <div class="col-md-11 col-md-offset-1 main"><!--box cotent-->
     <div class="col-md-5 organigramme"><!--organigrame-->
 
+
+    <div id="mynetwork"></div>
+    <div id="info"></div>
+
    
           
 
@@ -106,6 +111,7 @@
   <script src="js/ie10-viewport-bug-workaround.js"></script>
   <script src="js/circle-progress.js"></script>
   <script src="js/jquery.jOrgChart.js"></script>
+  <script src="js/vis.js"></script>
   <script src="js/frontend.js"></script>
 </body>
 </html>
