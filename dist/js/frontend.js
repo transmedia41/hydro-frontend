@@ -29,6 +29,7 @@ $('.pull-down').each(function() {
  */
 $('.circle_1').circleProgress({
     value: 0.6, 
+    progress: 50,
     size: 80,
     value: 0.75,
     thickness: 8,
