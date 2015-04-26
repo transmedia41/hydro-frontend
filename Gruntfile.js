@@ -51,7 +51,7 @@ module.exports = function (grunt) {
 
     // Task configuration.
     clean: {
-      dist: '../app/styles/theme',
+      dist: '../app/styles/',
       docs: 'docs/dist'
     },
 
