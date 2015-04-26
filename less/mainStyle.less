@@ -2,9 +2,11 @@
  * Base structure
  */
 
-html, body {
+html, body, #content, .fullpage, #leafletMap {
+  width: 100%;
   height: 100%;
 }
+
 
 .input{
      outline: none !important;
@@ -28,8 +30,6 @@ html, body {
 .imgGD {
   background-image: url('../img/halftone.png'); 
 }
-
-
 
 .pannelClose{
   margin-bottom: -25px;
@@ -67,6 +67,14 @@ html, body {
 /*
 * Table Dashborad E
 */
+
+footer {
+  z-index: 2;
+}
+
+div.dashboard-footer {
+  z-index: 2;
+}
 
 .dash_experience {
   th{
@@ -147,13 +155,6 @@ html, body {
   }
 }
 
-
-
-
-
-
-
-
 .contentDashboard {
 
 }
@@ -167,6 +168,16 @@ html, body {
 
 }
 
+
+/* 
+* Header bar
+*/ 
+
+// utiliser dans l'application angular pour que les div qui inclue
+// les header soit aussi en index 10
+div.header {
+  z-index: 10;
+}
 
 
 
