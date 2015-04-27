@@ -9,13 +9,13 @@
   min-width: 10px;
   padding: 3px 7px;
   font-size: @font-size-small;
-  font-weight: @badge-font-weight;
+  //font-weight: @badge-font-weight;
   color: @badge-color;
   line-height: @badge-line-height;
   vertical-align: baseline;
   white-space: nowrap;
   text-align: center;
-  background-color: @badge-bg;
+  background-color:@hydro-orange;
   border-radius: @badge-border-radius;
 
   // Empty badges collapse automatically (not available in IE8)
@@ -63,4 +63,16 @@
   .nav-pills > li > a > & {
     margin-left: 3px;
   }
+}
+
+#navBar{
+  .badge{
+    font-size: 1em !important;
+    background-color: @hydro-orange !important;
+  }
+}
+
+.badgePimp{
+  font-size: 1em !important;
+  background-color: @hydro-orange !important;
 }
