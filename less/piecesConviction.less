@@ -1,0 +1,45 @@
+.piecesConviction{
+	margin-top: 100px;
+}
+
+.piecesCollection{
+
+	h1 {
+		font-size: @h1-masta;
+		font-family: @font-family-sans-serif;
+	}
+	p {
+		font-size: @p-masta;
+	}
+
+	boder: solid 2px @hydro-braun-light;
+
+	img {
+		float: left;
+		width: 180px;
+		&:hover{
+
+			-webkit-transition: 1s ease-in-out;
+			-moz-transition: 1s ease-in-out;
+			-o-transition: 1s ease-in-out;
+			transition: 1s ease-in-out;
+
+			cursor: pointer;
+			-ms-transform: rotate(1deg); /* IE 9 */
+			-webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+			transform: rotate(1deg);
+
+		}
+	}	
+
+	img:last-child{
+		margin-right: 0px; 
+	}
+
+	.imgPiecesCollection {
+
+		margin-right: 25px;
+	}
+}
+
+

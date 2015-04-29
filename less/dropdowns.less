@@ -40,10 +40,12 @@
   list-style: none;
   font-size: @font-size-base;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  //DropDown
+  background-image: url('../img/halftone.png');
   background-color: @dropdown-bg;
-  border: 1px solid @dropdown-fallback-border; // IE8 fallback
-  border: 1px solid @dropdown-border;
-  border-radius: @border-radius-base;
+  border: 2px solid @dropdown-fallback-border; // IE8 fallback
+  border: 2px solid @dropdown-border;
+  //border-radius: @border-radius-base;
   .box-shadow(0 6px 12px rgba(0,0,0,.175));
   background-clip: padding-box;
 
