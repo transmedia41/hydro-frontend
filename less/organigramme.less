@@ -21,20 +21,26 @@
 				padding:10px 0 0 15px;
 				width: 100%;
 				margin: 0 0 20px;
-				height: 38px;
+				height: 40px;
 				float:left;
 				h3{
-					font-size: 1.2em;
+					font-size: 1em;
 					margin:0;
 					color: @hydro-white-text;
 					span{
-						font-size: 1.5em;
+						font-size: 1.3em;
 						margin-right:5%;
 						&:before{
 						}
 					}
 					&:not(.active){
 					}
+				}
+				.spacer{
+					margin: 25px 0px;
+					height: 2px;
+					background: @hydro-black-nav;
+					width: 90%;
 				}
 				&.active, &:hover{
 					cursor: pointer;
@@ -49,6 +55,9 @@
 				}
 				&:last-child{
 					margin-bottom: 0;
+					.spacer{
+						display: none;
+					}
 				}
 			}
 		}
@@ -145,7 +154,7 @@
 						th{
 							font-family: @font-family-sans-serif;
 							text-transform: lowercase;
-							font-size: 1.4em;
+							font-size: 1vw;
 							text-align: right;
 							width: 30%;
 							vertical-align: middle;

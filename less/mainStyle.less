@@ -503,3 +503,63 @@ div.header {
 ::-moz-selection {
   background: @hydro-braun-light; /* Gecko Browsers */
 }
+
+/*
+*		HELP Button
+*/
+
+#help{
+	position: absolute;
+	z-index: 25;
+	bottom: 10px;
+	right: 10px;
+	color: @hydro-braun;
+	.help_icon_wrap{
+		position: relative;
+		.trigger{
+			.tooltip_help{
+				display: block;
+				position: absolute;
+				background: rgba(238, 236, 225, 0.9);
+				width: 30vw;
+				height: auto;
+				top:150px;
+				right:50px;
+				padding: 10px;
+				-webkit-transition: all 150ms ease-in-out;
+				-moz-transition: all 150ms ease-in-out;
+				-ms-transition: all 150ms ease-in-out;
+				-o-transition: all 150ms ease-in-out;
+				transition: all 150ms ease-in-out;
+				p{	
+					color: @hydro-black-nav;
+					margin: 0;
+					font-size: large;
+				}
+			}
+			h1{
+				border-radius: 50%;
+				cursor: pointer;
+				background: @hydro-black-nav;
+				height: 50px;
+				width: 50px;
+				margin: 0;
+				padding-top: 8px;
+				padding-left: 1px;
+				text-align: center;
+				font-size: xx-large;
+			}
+			&:hover{
+				.tooltip_help{
+					top:0px;
+					-webkit-transition: all 150ms ease-in-out;
+					-moz-transition: all 150ms ease-in-out;
+					-ms-transition: all 150ms ease-in-out;
+					-o-transition: all 150ms ease-in-out;
+					transition: all 150ms ease-in-out;
+
+				}
+			}
+		}
+	}
+}
