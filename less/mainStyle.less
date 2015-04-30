@@ -2,9 +2,21 @@
  * Base structure
  */
 
+*:focus {
+    outline: 0;
+}
+
+
 html, body, #content, .fullpage, #leafletMap {
   width: 100%;
   height: 100%;
+
+  input:focus {
+    outline:0;
+
+}
+
+
 }
 
 .error-msg{
@@ -254,8 +266,6 @@ div.dashboard-footer {
       border-top: none;
     }
   }
-
-
 
 
   th{
