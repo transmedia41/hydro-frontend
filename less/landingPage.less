@@ -59,19 +59,63 @@
 	h1{
 		letter-spacing: 0.1em;
 		word-spacing: 0.1em;
-		text-transform: uppercase;
+		text-transform: lowercase;
 		font-size: @h1-masta;
 		font-family: @font-family-sans-serif;
 	}
 	p{
 		font-size: @p-masta;
+		letter-spacing: 1px;
+		line-height: 1em;
+		a{
+			font-size: 1em;
+		}
+	}
+	a{
+		font-size: @p-masta;
 	}
 
-
+	.tuto{
+		list-style: none;
+		margin-top: 20px;
+		float: left;
+		width: 100%;
+		padding: 0;
+		li{
+			float: left;
+			width: 22%;
+			margin: 0;
+			text-align: center;
+			margin-left: 4%;
+			span{
+				font-size: 3vw;
+			}
+			p{
+				font-family: @font-family-sans-serif;
+				text-transform: lowercase;
+				font-size: 1.5em;
+			}
+			&:first-child{
+				margin: 0;
+			}
+		}
+	}
 	.description{
 		 background-image: url('../img/halftone.png');
 		 background-color: white;
 		 margin-bottom: 10px;
+		 .side{
+			 .mobile{
+				 margin-top: 50px;
+				 img{
+					 width: 100%;
+				 }
+				 button{
+					 width:100%;
+					 margin-top:30px;
+				 }
+			}
+		 }
 		 }
 }
 
