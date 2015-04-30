@@ -6,6 +6,13 @@
     outline: 0;
 }
 
+button:focus {outline:0;}
+
+button:active {
+outline: none !important;
+border: none !important;
+}
+
 html, body, #content, .fullpage, #leafletMap {
   width: 100%;
   height: 100%;
@@ -380,8 +387,8 @@ div.header {
 
 .contentActionLogo{
   span {
-  color: @hydro-black;
-  font-size: 7vw;
+  color: @hydro-blue;
+  font-size: 7.4vw;
 
 
   }
@@ -485,4 +492,14 @@ div.header {
 .placeholder img {
   display: inline-block;
   border-radius: 50%;
+}
+
+
+//SELECTION
+
+::selection {
+  background: @hydro-braun-light; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: @hydro-braun-light; /* Gecko Browsers */
 }
