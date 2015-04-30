@@ -21,7 +21,7 @@
 				padding:10px 0 0 15px;
 				width: 100%;
 				margin: 0 0 20px;
-				height: 45px;
+				height: 38px;
 				float:left;
 				h3{
 					font-size: 1.2em;
@@ -43,11 +43,12 @@
 					}
 					background: url('../img/side_nav_hover.png') top right no-repeat;
 				}
+				
+				&:nth-child(3n){
+					margin-bottom: 45px;
+				}
 				&:last-child{
 					margin-bottom: 0;
-					a{
-						border-bottom: none;
-					}
 				}
 			}
 		}
@@ -68,7 +69,8 @@
 				background: rgba(0, 0, 0, 0.74);
 				position:fixed;
 				height: 100%;
-				width:90%;
+				width:100%;
+				left:5%;
 				img{
 					width:10%;
 					position:absolute;
@@ -91,6 +93,7 @@
 				width:70%;
 				margin-left: 15%;
 				margin-top:50px;
+				margin-bottom: 50px;
 				color: @hydro-black-nav;
 				.descHeader{
 					float: left;
